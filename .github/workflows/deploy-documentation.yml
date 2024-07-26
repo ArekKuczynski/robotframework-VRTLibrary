@@ -17,6 +17,7 @@ jobs:
              python -m pip install --upgrade pip
              pip install robotframework
              pip install robotframework-docgen
+             pip install visual-regression-tracker
       - name: Generate VRTLibrary keywords documentation
         run: |
              python -m robot.libdoc VRT/ doc/VRTLibrary.html
