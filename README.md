@@ -51,5 +51,5 @@ For local use and test debugging vrt.json file can be used. The file should be p
 }
 </pre>
 
-This library is being developed by [NiceProject Poland](https://niceproject.eu/).
+This library is being developed by [NiceProject Poland](https://niceproject.eu/).<br>
 ![Image](doc/Images/niceproject-logo.svg "NiceProject Logo")

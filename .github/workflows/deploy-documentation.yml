@@ -18,9 +18,9 @@ jobs:
              pip install robotframework
              pip install robotframework-docgen
              pip install visual-regression-tracker
-      - name: Generate VRTLibrary keywords documentation
+      - name: Generate VRTLibrary documentation
         run: |
-             python -m robot.libdoc VRT/ doc/VRTLibrary.html
+             python -m robot.libdoc VRT/ doc/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
