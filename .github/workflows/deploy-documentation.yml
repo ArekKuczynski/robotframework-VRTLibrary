@@ -15,11 +15,11 @@ jobs:
       - name: Install dependencies for building documentation
         run: |
              python -m pip install --upgrade pip
-             pip install robotframework
-             pip install robotframework-docgen
-             pip install visual-regression-tracker
+             python -m pip install poetry
+             poetry install
       - name: Generate VRTLibrary documentation
         run: |
+             poetry shell
              python -m robot.libdoc VRT/ doc/index.html
 
       - name: Upload artifact
