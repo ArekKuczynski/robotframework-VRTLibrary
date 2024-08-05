@@ -1,7 +1,7 @@
 name: Deploy Documentation
 on:
-  push: #release:
-    branches: ["workflow-documentation"] #types: [published]
+  release:
+    types: [released]
 
 jobs:
   build:
