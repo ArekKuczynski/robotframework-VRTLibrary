@@ -19,8 +19,7 @@ jobs:
              poetry install
       - name: Generate VRTLibrary documentation
         run: |
-             poetry shell
-             python -m robot.libdoc VRT/ doc/index.html
+             poetry run python -m robot.libdoc VRT/ doc/index.html 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
