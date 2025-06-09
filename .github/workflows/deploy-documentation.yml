@@ -14,12 +14,12 @@ jobs:
 
       - name: Install dependencies for building documentation
         run: |
-             python -m pip install --upgrade pip
-             python -m pip install poetry
+             python3 -m pip install --upgrade pip
+             python3 -m pip install poetry
              poetry install
       - name: Generate VRTLibrary documentation
         run: |
-             poetry run python -m robot.libdoc VRT/ doc/index.html 
+             poetry run python3 -m robot.libdoc VRT/ doc/index.html 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
