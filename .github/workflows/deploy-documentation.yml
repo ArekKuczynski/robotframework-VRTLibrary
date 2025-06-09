@@ -1,7 +1,7 @@
 name: Deploy Documentation
 on:
-  release:
-    types: [released]
+  push:
+    branches: ["test-workflow-documentation"]
 
 jobs:
   build:
